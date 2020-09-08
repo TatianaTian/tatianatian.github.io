@@ -263,7 +263,7 @@
                     <div class="col-md-6">
                   <h5 style="color: #52575d" class="title"><b>Create Blogs</b></h5>
                   <P style="color: #52575d" class="description">Once the user saves the blog title and the blog content, an <code>id</code> will be automatically generated and saved along with the blog content as 
-                    an <code>object</code> of a <code>state</code>. The <code>state</code> is kept in a <code>Context</code> that works with a <code>Reducer</code>. The implementation required <code>useContext</code> and <code>useReducer</code>.
+                    an <code>object</code> of the <code>state</code>. The <code>state</code> is kept in a <code>Context</code> that works with a <code>Reducer</code>. The implementation required <code>useContext</code> and <code>useReducer</code>.
                   <br>
                    <code>{<br>
                     &nbsp;&nbsp;id: blog.id,<br>
@@ -274,7 +274,7 @@
                     
                     <br>
                     <h5 style="color: #52575d" class="title"><b>Read Blogs</b></h5>
-                    <P style="color: #52575d" class="description">I used <code>useContext</code> to read <code>state</code>, and find the blog by <code>id</code>.</P>
+                    <P style="color: #52575d" class="description">I used <code>useContext</code> to read <code>state</code>, and filtered the blog by <code>id</code>.</P>
                     <br>
                     <h5 style="color: #52575d" class="title"><b>Edit Blogs</b></h5>
                     <P style="color: #52575d" class="description">I displayed the <code>initialValues</code> as the previous title and content by reading the <code>state</code> with <code>useContext</code>. The user can edit the blog based on his/her previous inputs. </P>
@@ -285,7 +285,7 @@
                       </P>
                     <br>
                     <h5 style="color: #52575d" class="title"><b>State Management</b></h5>
-                    <P style="color: #52575d" class="description">The key of this app is to use <code>useContext</code> and <code>useReducer</code> to manage <code>state</code>. <code>useReducer</code> can ‘centralize’ all your state transitions to a <code>reducer</code> function by including a <code>dispatch</code> function in each state transition. 
+                    <P style="color: #52575d" class="description">The key of this app is to use <code>useContext</code> and <code>useReducer</code> to manage <code>state</code>. <code>useReducer</code> can ‘centralize’ all the state transitions to a <code>reducer</code> function by including a <code>dispatch</code> function in each state transition. 
                       It’s a powerful combination to manage nested components with complex state transitions. </P>
                     </p>
                   <br>
