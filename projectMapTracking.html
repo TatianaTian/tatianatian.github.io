@@ -145,11 +145,17 @@
                     display: block
 				}
         h1.project_title{
-          font-size: 32px
+          font-size: 28px
 				}
         Img.icon{
           width: 5%;
         }
+        h5.title{
+          font-size: 20px;
+        }
+        p.description{
+          font-size: 16px;
+        }	
 		}
 		@media (max-width: 576px){
             h1.title {
@@ -172,11 +178,17 @@
                     display: block
 				}
         h1.project_title{
-				font-size: 30px
+				font-size: 28px
 						}
 			Img.icon{
 				width: 10%;
-        	}	
+          }	
+          h5.title{
+          font-size: 18px;
+        }
+        p.description{
+          font-size: 15px;
+        }	
         }
 
         </style>
@@ -200,9 +212,9 @@
 						  <Dropdown.ItemText style=" font-size: 16px; font-weight: bold; margin-left: 15px;">By project type</Dropdown.ItemText>
 						  
 						  
-						  <a class="dropdown-item" href="projectRestaurantApp.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Restaurant Search</a>
-						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Map Tracking</a>
-						  <a class="dropdown-item" href="projectBlog.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Blog Management</a>
+						  <a class="dropdown-item" href="projectRestaurantApp.html" style=" font-size: 14px;">Mobile App - Restaurant Search</a>
+						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App - Map Tracking</a>
+						  <a class="dropdown-item" href="projectBlog.html" style=" font-size: 14px;">Mobile App - Blog Management</a>
 						  <a class="dropdown-item" href="projectCurrencyMonitor.html" style="font-size: 14px;">Web App - Exchange Rate Monitor</a>
 						  <a class="dropdown-item" href="projectPriceSensitivity.html" style=" font-size: 14px;">Web App - E-commerce Price Sensitivity Tool</a>
 						  <a class="dropdown-item" href="projectChatbot.html" style=" font-size: 14px;">Chatbot - English Convo Practice</a>
@@ -241,38 +253,38 @@
             <div class="text container">
               <div class="desc" style="margin-bottom:200px; padding-top: 100px;">
                 <h1 class="text-center project_title"> <Img src="./images/illu_map.png" class="icon"> Mobile App - Map Tracking</h1>
-                <h5 class="mb-4 text-center" style="color: #52575d">
+                <h5 class="mb-4 text-center title" style="color: #52575d">
                   <b>Stack: React Native, Express, Node JS, MongoDB </b></h5>
-                  <P style="color: #52575d">A mobile app that can request the location permission from users, track users’ real-time locations, and draw a route on the map. The users can record, save, and retrieve their tracks. It can be used to record users running tracks.</P>
+                  <P style="color: #52575d" class="description">A mobile app that can request the location permission from users, track users’ real-time locations, and draw a route on the map. The users can record, save, and retrieve their tracks. It can be used to record users running tracks.</P>
                 <!--<Img src="./images/currencyMonitor1.png" style="width: 70%; height: 70%;  display: block; margin-left: auto; margin-right: auto;" />-->
                 <br>
                 <div class='row'>
                   <div class="col-md-6">
-                <h5 style="color: #52575d"><b>In-App Authentication</b></h5>
-                <P style="color: #52575d">Used <code>Express</code> and <code>Node JS</code> for backend and set up two API routes: <code>./signup</code> and <code>./signin</code>. Used <code>jsonwebtoken</code> for authentication and <code>Bcrypt</code> for password-hashing. Users hashed credentials are stored in <code>MongoDB </code>database with <code>mongoose</code> library.</P>
+                <h5 style="color: #52575d" class="title"><b>In-App Authentication</b></h5>
+                <P style="color: #52575d" class="description">Used <code>Express</code> and <code>Node JS</code> for backend and set up two API routes: <code>./signup</code> and <code>./signin</code>. Used <code>jsonwebtoken</code> for authentication and <code>Bcrypt</code> for password-hashing. Users hashed credentials are stored in <code>MongoDB </code>database with <code>mongoose</code> library.</P>
                   <br>
-                  <h5 style="color: #52575d"><b>Persistent Login</b></h5>
-                  <P style="color: #52575d" >Stored token in <code>AsyncStorage</code>. The app reads the token in <code>AsyncStorage</code> for persistent login.</P>
+                  <h5 style="color: #52575d" class="title"><b>Persistent Login</b></h5>
+                  <P style="color: #52575d" class="description">Stored token in <code>AsyncStorage</code>. The app reads the token in <code>AsyncStorage</code> for persistent login.</P>
                   <br>
-                  <h5 style="color: #52575d"><b>Location Permission Request</b></h5>
-                  <P style="color: #52575d">
+                  <h5 style="color: #52575d" class="title"><b>Location Permission Request</b></h5>
+                  <P style="color: #52575d" class="description">
                     When the user navigates to create a track, the app prompts the user for permission to track locations. The request is <code>requestPermissionsAsync()</code> function from <code>expo-location</code> library.</P>
                   <br>
-                  <h5 style="color: #52575d"><b>Subscribe Locations</b></h5>
-                  <P style="color: #52575d">
+                  <h5 style="color: #52575d" class="title"><b>Subscribe Locations</b></h5>
+                  <P style="color: #52575d" class="description">
                     Once the user grants the permission to track locations, the app subscribes to location update events with <code>watchPositionAsync()</code> function from <code>expo-location</code> library.</P>
                   <br>
-                  <h5 style="color: #52575d"><b><code></code>MapView</b></h5>
-                  <P style="color: #52575d">Included <code>MapView</code> from <code>‘react-native-maps’</code> and used <code>Circle</code> and <code>Polyline</code> to track current and historical locations. The <code>Polyline</code> only tracks the locations when the tracking mode is on. </P>
+                  <h5 style="color: #52575d" class="title"><b><code></code>MapView</b></h5>
+                  <P style="color: #52575d" class="description">Included <code>MapView</code> from <code>‘react-native-maps’</code> and used <code>Circle</code> and <code>Polyline</code> to track current and historical locations. The <code>Polyline</code> only tracks the locations when the tracking mode is on. </P>
                   <br>
-                  <h5 style="color: #52575d"><b>Tracking Mode Turn On/Off</b></h5>
-                  <P style="color: #52575d">Used state <code>recording</code> to track tracking mode. The tracking mode is on when <code>recording === true</code> and triggered by a button click. </P>
+                  <h5 style="color: #52575d" class="title"><b>Tracking Mode Turn On/Off</b></h5>
+                  <P style="color: #52575d" class="description">Used state <code>recording</code> to track tracking mode. The tracking mode is on when <code>recording === true</code> and triggered by a button click. </P>
                   <br>
-                  <h5 style="color: #52575d"><b>Store/Fetch Tracks</b></h5>
-                  <P style="color: #52575d">Used <code>Axios</code> to send/receive data from the backend server. Set up <code>/tracks</code> API to post and get tracks. The data is stored in <code>MongoDB</code> with <code>mongoose</code> library.</P>
+                  <h5 style="color: #52575d" class="title"><b>Store/Fetch Tracks</b></h5>
+                  <P style="color: #52575d" class="description">Used <code>Axios</code> to send/receive data from the backend server. Set up <code>/tracks</code> API to post and get tracks. The data is stored in <code>MongoDB</code> with <code>mongoose</code> library.</P>
                   <br>
-                  <h5 style="color: #52575d"><b>Express Backend API Setup</b></h5>
-                  <P style="color: #52575d">Used <code>Jsonwebtoken</code> to check if the user is logged in. Set up database <code>schemas</code> to post new objects to <code>MongoDB</code> databases. Used <code>express</code> to set up routes such as <code>/signup</code>, <code>/signin</code>, <code>/tracks</code> to receive requests from the front end.</P>
+                  <h5 style="color: #52575d" class="title"><b>Express Backend API Setup</b></h5>
+                  <P style="color: #52575d" class="description">Used <code>Jsonwebtoken</code> to check if the user is logged in. Set up database <code>schemas</code> to post new objects to <code>MongoDB</code> databases. Used <code>express</code> to set up routes such as <code>/signup</code>, <code>/signin</code>, <code>/tracks</code> to receive requests from the front end.</P>
                 <br>
               </div>
               <div class="col-md-6">

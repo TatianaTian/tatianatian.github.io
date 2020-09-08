@@ -144,10 +144,16 @@
                     display: block
 				}
 				h1.project_title{
-          font-size: 32px
+          font-size: 28px
 				}
         Img.icon{
           width: 5%;
+		}
+		h5.title{
+          font-size: 20px;
+        }
+        p.description{
+          font-size: 16px;
         }
 		}
 		@media (max-width: 576px){
@@ -178,11 +184,17 @@
                     display: block
 			}
 			h1.project_title{
-				font-size: 30px
+				font-size: 28px
 						}
 			Img.icon{
 				width: 10%;
-        	}	
+			}	
+			h5.title{
+          font-size: 18px;
+        }
+        p.description{
+          font-size: 15px;
+        }
         }
 
         </style>
@@ -206,9 +218,9 @@
 						  <Dropdown.ItemText style=" font-size: 16px; font-weight: bold; margin-left: 15px;">By project type</Dropdown.ItemText>
 						  
 						  
-						  <a class="dropdown-item" href="projectRestaurantApp.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Restaurant Search</a>
-						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Map Tracking</a>
-						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Blog Management</a>
+						  <a class="dropdown-item" href="projectRestaurantApp.html" style=" font-size: 14px;">Mobile App - Restaurant Search</a>
+						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App - Map Tracking</a>
+						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App - Blog Management</a>
 						  <a class="dropdown-item" href="projectCurrencyMonitor.html" style="font-size: 14px;">Web App - Exchange Rate Monitor</a>
 						  <a class="dropdown-item" href="projectPriceSensitivity.html" style=" font-size: 14px;">Web App - E-commerce Price Sensitivity Tool</a>
 						  <a class="dropdown-item" href="projectChatbot.html" style=" font-size: 14px;">Chatbot - English Convo Practice</a>
@@ -247,28 +259,28 @@
 					<div class="text container">
 						<div class="desc" style="margin-bottom:200px; padding-top: 100px;">
 							<h1 class="text-center project_title"> <Img src="./images/illu_robot.png" class="icon"> WhatsApp Chatbot for English Learners</h1>
-              <h5 class="mb-4 text-center" style="color: #52575d">
+              <h5 class="mb-4 text-center title" style="color: #52575d">
                 <b>Stack: RiveScript, MongoDB, WhatsApp Business API, Google Natural Language API, Google Translation API, Bad Word Filter API, Python </b></h5>
-                <P style="color: #52575d">A WhatsApp chatbot for English learners to practice conversational English. The bot can detect languages, entities, bad words and sentiments to respond with proper words with the right tone. It can also loop in our staff if the bot isn’t able to respond.
+                <P style="color: #52575d" class="description">A WhatsApp chatbot for English learners to practice conversational English. The bot can detect languages, entities, bad words and sentiments to respond with proper words with the right tone. It can also loop in our staff if the bot isn’t able to respond.
                 </P>
               <!--<Img src="./images/currencyMonitor1.png" style="width: 70%; height: 70%;  display: block; margin-left: auto; margin-right: auto;" />-->
               <br>
               <div class='row'>
                 <div class="col-md-6">
-              <h5 style="color: #52575d"><b>Language Detection</b></h5>
-              <P style="color: #52575d">Implemented <code>Google Translation API</code> to detect languages and encouraged the users to speak English with the bot. </P>
+              <h5 style="color: #52575d" class="title"><b>Language Detection</b></h5>
+              <P style="color: #52575d" class="description">Implemented <code>Google Translation API</code> to detect languages and encouraged the users to speak English with the bot. </P>
                 <br>
-                <h5 style="color: #52575d"><b>Entity Detection</b></h5>
-                <P style="color: #52575d" >Utilized <code>Google Natural Language API</code> to detect entities such as names, addresses, activities for the bot to understand conversations and ask proper questions.</P>
+                <h5 style="color: #52575d" class="title"><b>Entity Detection</b></h5>
+                <P style="color: #52575d" class="description">Utilized <code>Google Natural Language API</code> to detect entities such as names, addresses, activities for the bot to understand conversations and ask proper questions.</P>
                 <br>
-                <h5 style="color: #52575d"><b>Bad Word Detection</b></h5>
-                <P style="color: #52575d">Used <code>Bad Word Filter API</code> to encourage proper conversations.</P>
+                <h5 style="color: #52575d" class="title"><b>Bad Word Detection</b></h5>
+                <P style="color: #52575d" class="description">Used <code>Bad Word Filter API</code> to encourage proper conversations.</P>
                 <br>
-                <h5 style="color: #52575d"><b>User Sentiment Detection</b></h5>
-                <P style="color: #52575d">Implemented <code>Google Natural Language API</code> to detect users’ sentiments and enabled the bot to respond with proper tones. </P>
+                <h5 style="color: #52575d" class="title"><b>User Sentiment Detection</b></h5>
+                <P style="color: #52575d" class="description">Implemented <code>Google Natural Language API</code> to detect users’ sentiments and enabled the bot to respond with proper tones. </P>
                 <br>
-                <h5 style="color: #52575d"><b>Real Person Loop In</b></h5>
-                <P style="color: #52575d">The chatbot is designed to respond to users in all possible scenarios, but in the case of bugs that the bot is not able to reply, the bot will send the conversation to our staff to loop in a real person in the conversation.</P>
+                <h5 style="color: #52575d" class="title"><b>Real Person Loop In</b></h5>
+                <P style="color: #52575d" class="description">The chatbot is designed to respond to users in all possible scenarios, but in the case of bugs that the bot is not able to reply, the bot will send the conversation to our staff to loop in a real person in the conversation.</P>
               <br>
             </div>
             <div class="col-md-6">
@@ -280,10 +292,10 @@
                 <Img src="./images/chatbot2.jpg"  class="screenshot" >
                 </div>
               </div>
-              <P style="color: #A9A9A9" class="text-center">party conversation example</P>
+              <P style="color: #A9A9A9" class="text-center description">party conversation example</P>
               <br>
               <Img src="./images/chatbot3.jpg"  class="screenshot2" >
-              <P style="color: #A9A9A9" class="text-center">loop in a real person</P>
+              <P style="color: #A9A9A9" class="text-center description">loop in a real person</P>
             </div>
             </div>
 						</div>

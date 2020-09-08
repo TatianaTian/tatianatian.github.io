@@ -144,10 +144,16 @@
                     display: block
 				}
         h1.project_title{
-          font-size: 32px
+          font-size: 28px
 				}
         Img.icon{
           width: 5%;
+        }
+        h5.title{
+          font-size: 20px;
+        }
+        p.description{
+          font-size: 16px;
         }
 		}
 		@media (max-width: 576px){
@@ -171,12 +177,19 @@
                     display: block
 				}
         h1.project_title{
-          font-size: 30px
+          font-size: 28px
 				}
         Img.icon{
           width: 10%;
         }
+        h5.title{
+          font-size: 18px;
         }
+        p.description{
+          font-size: 15px;
+        }
+        }
+  
 
         </style>
         
@@ -199,9 +212,9 @@
 						  <Dropdown.ItemText style=" font-size: 16px; font-weight: bold; margin-left: 15px;">By project type</Dropdown.ItemText>
 						  
 						  
-						  <a class="dropdown-item" href="projectRestaurantApp.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Restaurant Search</a>
-						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Map Tracking</a>
-						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Blog Management</a>
+						  <a class="dropdown-item" href="projectRestaurantApp.html" style=" font-size: 14px;">Mobile App - Restaurant Search</a>
+						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App - Map Tracking</a>
+						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App - Blog Management</a>
 						  <a class="dropdown-item" href="projectCurrencyMonitor.html" style="font-size: 14px;">Web App - Exchange Rate Monitor</a>
 						  <a class="dropdown-item" href="projectPriceSensitivity.html" style=" font-size: 14px;">Web App - E-commerce Price Sensitivity Tool</a>
 						  <a class="dropdown-item" href="projectChatbot.html" style=" font-size: 14px;">Chatbot - English Convo Practice</a>
@@ -243,15 +256,15 @@
                 <div class="desc" style="margin-bottom:200px; padding-top: 100px;">
                   
                   <h1 class="text-center project_title"><Img src="./images/illu_blog.png" class="icon">Mobile App - Blog My Life</h1>
-                  <h5 class="mb-4 text-center" style="color: #52575d">
+                  <h5 class="mb-4 text-center title" style="color: #52575d">
                     <b>Stack: React Native, fake backend JSON Server</b></h5>
-                    <P style="color: #52575d">A mobile app that enables users to create, edit, read, and delete blogs. I mainly worked on advanced state management with context. </P>
+                    <P style="color: #52575d" class="description">A mobile app that enables users to create, edit, read, and delete blogs. I mainly worked on advanced state management with context. </P>
                   <!--<Img src="./images/currencyMonitor1.png" style="width: 70%; height: 70%;  display: block; margin-left: auto; margin-right: auto;" />-->
                   <br>
                   <div class='row'>
                     <div class="col-md-6">
-                  <h5 style="color: #52575d"><b>Create Blogs</b></h5>
-                  <P style="color: #52575d">Once the user saves the blog title and the blog content, an <code>id</code> will be automatically generated and saved along with the blog content as 
+                  <h5 style="color: #52575d" class="title"><b>Create Blogs</b></h5>
+                  <P style="color: #52575d" class="description">Once the user saves the blog title and the blog content, an <code>id</code> will be automatically generated and saved along with the blog content as 
                     an <code>object</code> of a <code>state</code>. The <code>state</code> is kept in a <code>Context</code> that works with a <code>Reducer</code>. The implementation required <code>useContext</code> and <code>useReducer</code>.
                   <br>
                    <code>{<br>
@@ -262,19 +275,19 @@
                     </P>
                     
                     <br>
-                    <h5 style="color: #52575d"><b>Read Blogs</b></h5>
-                    <P style="color: #52575d" >I used <code>useContext</code> to read <code>state</code>, and find the blog by <code>id</code>.</P>
+                    <h5 style="color: #52575d" class="title"><b>Read Blogs</b></h5>
+                    <P style="color: #52575d" class="description">I used <code>useContext</code> to read <code>state</code>, and find the blog by <code>id</code>.</P>
                     <br>
-                    <h5 style="color: #52575d"><b>Edit Blogs</b></h5>
-                    <P style="color: #52575d">I displayed the <code>initialValues</code> as the previous title and content by reading the <code>state</code> with <code>useContext</code>. The user can edit the blog based on his/her previous inputs. </P>
+                    <h5 style="color: #52575d" class="title"><b>Edit Blogs</b></h5>
+                    <P style="color: #52575d" class="description">I displayed the <code>initialValues</code> as the previous title and content by reading the <code>state</code> with <code>useContext</code>. The user can edit the blog based on his/her previous inputs. </P>
                     <br>
-                    <h5 style="color: #52575d"><b>Delete Blogs</b></h5>
-                    <P style="color: #52575d">Remove the blog by filtering the current <code>state</code>:<br>
+                    <h5 style="color: #52575d" class="title"><b>Delete Blogs</b></h5>
+                    <P style="color: #52575d" class="description">Remove the blog by filtering the current <code>state</code>:<br>
                       <code>state.filter(blogPost => blogPost.id !== action.payload)</code>
                       </P>
                     <br>
-                    <h5 style="color: #52575d"><b>State Management</b></h5>
-                    <P style="color: #52575d">The key of this app is to use <code>useContext</code> and <code>useReducer</code> to manage <code>state</code>. <code>useReducer</code> can ‘centralize’ all your state transitions to a <code>reducer</code> function by including a <code>dispatch</code> function in each state transition. 
+                    <h5 style="color: #52575d" class="title"><b>State Management</b></h5>
+                    <P style="color: #52575d" class="description">The key of this app is to use <code>useContext</code> and <code>useReducer</code> to manage <code>state</code>. <code>useReducer</code> can ‘centralize’ all your state transitions to a <code>reducer</code> function by including a <code>dispatch</code> function in each state transition. 
                       It’s a powerful combination to manage nested components with complex state transitions. </P>
                     </p>
                   <br>
@@ -291,7 +304,7 @@
                   
                   <div class="col-md-12">
                     <Img src="./images/blog.gif" class="screenshot" >
-                    <P style="color: #A9A9A9" class="text-center">content source: https://www.heartandstroke.ca/</P>
+                    <P style="color: #A9A9A9" class="text-center description">content source: https://www.heartandstroke.ca/</P>
                   </div>
                 </div>
            

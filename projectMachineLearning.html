@@ -72,20 +72,33 @@
           @media (min-width: 576px) and (max-width: 768px){
 
           h1.project_title{
-            font-size: 32px
+            font-size: 28px
           }
           Img.icon{
             width: 5%;
           }
+          h5.title{
+          font-size: 20px;
+        }
+        p.description{
+          font-size: 16px;
+        }
       }
       @media (max-width: 576px){
 
           h1.project_title{
-            font-size: 30px
+            font-size: 28px
           }
           Img.icon{
             width: 10%;
           }
+          h5.title{
+          font-size: 18px;
+        }
+        p.description{
+          font-size: 15px;
+        }	
+        
           }
   
           </style>
@@ -109,9 +122,9 @@
 						  <Dropdown.ItemText style=" font-size: 16px; font-weight: bold; margin-left: 15px;">By project type</Dropdown.ItemText>
 						  
 						  
-						  <a class="dropdown-item" href="projectRestaurantApp.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Restaurant Search</a>
-						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Map Tracking</a>
-						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Blog Management</a>
+						  <a class="dropdown-item" href="projectRestaurantApp.html" style=" font-size: 14px;">Mobile App - Restaurant Search</a>
+						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App - Map Tracking</a>
+						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App - Blog Management</a>
 						  <a class="dropdown-item" href="projectCurrencyMonitor.html" style="font-size: 14px;">Web App - Exchange Rate Monitor</a>
 						  <a class="dropdown-item" href="projectPriceSensitivity.html" style=" font-size: 14px;">Web App - E-commerce Price Sensitivity Tool</a>
 						  <a class="dropdown-item" href="projectChatbot.html" style=" font-size: 14px;">Chatbot - English Convo Practice</a>
@@ -150,20 +163,20 @@
 					<!--<div class="overlay"></div> -->
 					<div class="text container" style="padding-bottom:200px;">
               <h1 class="text-center project_title" style="padding-top: 100px"><Img src="./images/illu_ml.png" class="icon"> Machine Learning Research</h1>
-              <P style="color: #52575d"> A <code>supervised binary classification</code> to predict the S&P 500 stock price moving direction the next trading day. Winner of Duke Computer Science Undergraduate Project Showcase 2019.
+              <P style="color: #52575d" class="description"> A <code>supervised binary classification</code> to predict the S&P 500 stock price moving direction the next trading day. Winner of Duke Computer Science Undergraduate Project Showcase 2019.
               </P>
-              <h5 style="color: #52575d"><b>Data</b></h5>
-                <P style="color: #52575d">S&P 500 companies financial statement data, daily stock prices, management data, relevant news. 
+              <h5 style="color: #52575d" class="title"><b>Data</b></h5>
+                <P style="color: #52575d" class="description">S&P 500 companies financial statement data, daily stock prices, management data, relevant news. 
                 </P>
-              <h5 style="color: #52575d"><b>Models</b></h5>
-                <P style="color: #52575d">Linear Regression, Linear SVM, RBF SVM, Decision Tree, Random Forest, Neural Network.
+              <h5 style="color: #52575d" class="title"><b>Models</b></h5>
+                <P style="color: #52575d" class="description">Linear Regression, Linear SVM, RBF SVM, Decision Tree, Random Forest, Neural Network.
                 </P>
 
                 
               <br>
               <embed src="./images/research.jpg" style="width: 100%; border: none;"  class="text-center">
               <br>
-						  <p>Duke Computer Science Undergraduate Project Showcase 2019 <a href="https://www.cs.duke.edu/undergrad/showcase_2019" target="_blank"><u>Winning Posters</u></a></p>
+						  <p class="description">Duke Computer Science Undergraduate Project Showcase 2019 <a href="https://www.cs.duke.edu/undergrad/showcase_2019" target="_blank"><u>Winning Posters</u></a></p>
               <a class="btn" type="button" href="https://www.cs.duke.edu/sites/default/files/2019-04/2019Showcase_03.pdf" target="_blank" style="background-color: #ee6f57; color: white;" >
                 <b>Check the poster</b>
               </a>

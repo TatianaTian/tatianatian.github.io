@@ -144,11 +144,17 @@
                     display: block
 				}
         h1.project_title{
-          font-size: 32px
+          font-size: 28px
 				}
         Img.icon{
           width: 5%;
         }
+        h5.title{
+          font-size: 20px;
+        }
+        p.description{
+          font-size: 16px;
+        }	
 		}
 		@media (max-width: 576px){
             h1.title {
@@ -171,11 +177,17 @@
                     display: block
 				}
         h1.project_title{
-          font-size: 30px
+          font-size: 28px
 				}
         Img.icon{
           width: 10%;
         }
+        h5.title{
+          font-size: 18px;
+        }
+        p.description{
+          font-size: 15px;
+        }	
         }
 
         </style>
@@ -199,20 +211,20 @@
 						  <Dropdown.ItemText style=" font-size: 16px; font-weight: bold; margin-left: 15px;">By project type</Dropdown.ItemText>
 						  
 						  
-						  <a class="dropdown-item" href="projectRestaurantApp.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Restaurant Search</a>
-						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Map Tracking</a>
-						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Blog Management</a>
-						  <a class="dropdown-item" href="projectCurrencyMonitor.html" style="font-size: 14px;">Web App - Exchange Rate Monitor</a>
-						  <a class="dropdown-item" href="projectPriceSensitivity.html" style=" font-size: 14px;">Web App - E-commerce Price Sensitivity Tool</a>
+						  <a class="dropdown-item" href="projectRestaurantApp.html" style=" font-size: 14px;">Mobile App - Restaurant Search</a>
+						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App - Map Tracking</a>
+						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App - Blog Management</a>
+						  <a class="dropdown-item" href="projectCurrencyMonitor.html" style="font-size: 14px;">Web App - Foreign Rate Monitor</a>
+						  <a class="dropdown-item" href="projectPriceSensitivity.html" style=" font-size: 14px;">Web App - Price Sensitivity Tool</a>
 						  <a class="dropdown-item" href="projectChatbot.html" style=" font-size: 14px;">Chatbot - English Convo Practice</a>
 						  <a class="dropdown-item" href="projectMachineLearning.html" style=" font-size: 14px;">Machine Learning Research</a>
 						  <div class="dropdown-divider"></div>
 						  <Dropdown.ItemText style=" font-size: 16px; font-weight: bold; margin-left: 15px;">By technicals</Dropdown.ItemText>
 						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Express Backend API Setup</a>
-						  <a class="dropdown-item" href="projectRestaurantApp.html" style=" font-size: 14px;">Authentication with Persistent Login</a>
-						  <a class="dropdown-item" href="projectBlog.html" style="font-size: 14px;">State/Context Management in React Native</a>
+						  <a class="dropdown-item" href="projectRestaurantApp.html" style=" font-size: 14px;">Authentication & Persistent Login</a>
+						  <a class="dropdown-item" href="projectBlog.html" style="font-size: 14px;">State/Context in React Native</a>
 						  <a class="dropdown-item" href="projectMapTracking.html" style="font-size: 14px;">Location Tracking in React Native</a>
-						  <a class="dropdown-item" href="projectRestaurantApp.html" style="font-size: 14px;">Animated Map Views in React Native</a>
+						  <a class="dropdown-item" href="projectRestaurantApp.html" style="font-size: 14px;">Animated Map Views</a>
 						  <a class="dropdown-item" href="projectChatbot.html" style=" font-size: 14px;">RiveScript Chatbot</a>
 						  <a class="dropdown-item" href="projectPriceSensitivity.html" style=" font-size: 14px;">GraphQL Querying Data</a>
 						  <a class="dropdown-item" href="projectPriceSensitivity.html" style=" font-size: 14px;">Webhooks</a>
@@ -244,31 +256,31 @@
                   
                   <h1 class="text-center project_title"><Img src="./images/illu_res.png" class="icon">Mobile App - Restaurants Recommender</h1>
                     <p class="text-center">(in process)</p>
-                  <h5 class="mb-4 text-center" style="color: #52575d">
+                  <h5 class="mb-4 text-center title" style="color: #52575d">
                     <b>Stack: React Native, Express, Node JS, MongoDB, Yelp API, RiveScript</b></h5>
-                    <P style="color: #52575d">A mobile app that recommends restaurants to users. It focused on finding similar restaurants to the ones selected by users based on certain criteria. </P>
+                    <P style="color: #52575d" class="description">A mobile app that recommends restaurants to users. It focused on finding similar restaurants to the ones selected by users based on certain criteria. </P>
                   <!--<Img src="./images/currencyMonitor1.png" style="width: 70%; height: 70%;  display: block; margin-left: auto; margin-right: auto;" />-->
                   <br>
                   <div class='row'>
                     <div class="col-md-6">
-                      <h5 style="color: #52575d"><b>In-App Authentication</b></h5>
-                      <P style="color: #52575d">Used <code>Express</code> and <code>Node JS</code> for backend and set up two API routes: <code>./signup</code> and <code>./signin</code>. Used <code>jsonwebtoken</code> for authentication and <code>Bcrypt</code> for password-hashing. Users hashed credentials are stored in <code>MongoDB </code>database with <code>mongoose</code> library.</P>
+                      <h5 style="color: #52575d" class="title"><b>In-App Authentication</b></h5>
+                      <P style="color: #52575d" class="description">Used <code>Express</code> and <code>Node JS</code> for backend and set up two API routes: <code>./signup</code> and <code>./signin</code>. Used <code>jsonwebtoken</code> for authentication and <code>Bcrypt</code> for password-hashing. Users hashed credentials are stored in <code>MongoDB </code>database with <code>mongoose</code> library.</P>
                         <br>
-                        <h5 style="color: #52575d"><b>Persistent Login</b></h5>
-                        <P style="color: #52575d" >Stored token in <code>AsyncStorage</code>. The app reads the token in <code>AsyncStorage</code> for persistent login.</P>
+                        <h5 style="color: #52575d" class="title"><b>Persistent Login</b></h5>
+                        <P style="color: #52575d" class="description">Stored token in <code>AsyncStorage</code>. The app reads the token in <code>AsyncStorage</code> for persistent login.</P>
                         <br>
-                    <h5 style="color: #52575d"><b>Restaurant Search</b></h5>
-                    <P style="color: #52575d">
+                    <h5 style="color: #52575d" class="title"><b>Restaurant Search</b></h5>
+                    <P style="color: #52575d" class="description">
                       Connected to <code>Yelp API</code> with <code>Bearer Authentication</code> and query data with <code>Axios</code>. 
                       </P>
                     <br>
-                    <h5 style="color: #52575d"><b>Animated Map View</b></h5>
-                    <P style="color: #52575d">
+                    <h5 style="color: #52575d" class="title"><b>Animated Map View</b></h5>
+                    <P style="color: #52575d" class="description">
                       Included <code>MapView.Marker</code> to pinpoint restaurants’ latitude & longitude locations. Used <code>interpolation</code> from <code>React Native Animation API</code> to define the opacity range of location markers. Used <code>ScrollView</code> with <code>Animated.event()</code> to trace the current restaurant card, show its location in full opacity, and move the <code>MapView</code> to its location.
                     </p>
                     <br>
-                    <h5 style="color: #52575d"><b>Express Backend API Setup</b></h5>
-                    <P style="color: #52575d">Used <code>Jsonwebtoken</code> to check if the user is logged in. Set up database <code>schemas</code> to post new objects to <code>MongoDB</code> databases. Used <code>express</code> to set up routes such as <code>/signup</code>, <code>/signin</code>, <code>/reviews</code> to receive requests from the front end.</P>
+                    <h5 style="color: #52575d" class="title"><b>Express Backend API Setup</b></h5>
+                    <P style="color: #52575d" class="description">Used <code>Jsonwebtoken</code> to check if the user is logged in. Set up database <code>schemas</code> to post new objects to <code>MongoDB</code> databases. Used <code>express</code> to set up routes such as <code>/signup</code>, <code>/signin</code>, <code>/reviews</code> to receive requests from the front end.</P>
                   <br>
                 </div>
                 <div class="col-md-6">

@@ -144,10 +144,16 @@
                     display: block
 				}
 				h1.project_title{
-          font-size: 32px
+          font-size: 28px
 				}
         Img.icon{
           width: 5%;
+		}
+		h5.title{
+          font-size: 20px;
+        }
+        p.description{
+          font-size: 16px;
         }
 		}
 		@media (max-width: 576px){
@@ -171,11 +177,17 @@
                     display: block
 				}
 				h1.project_title{
-				font-size: 30px
+				font-size: 28px
 						}
 			Img.icon{
 				width: 10%;
-        	}	
+			}
+			h5.title{
+          font-size: 18px;
+        }
+        p.description{
+          font-size: 15px;
+        }	
         }
 
         </style>
@@ -197,11 +209,9 @@
 							<a class="dropdown-item" href="project.html" style=" font-size: 14px;">View all</a>
 							<div class="dropdown-divider"></div>
 						  <Dropdown.ItemText style=" font-size: 16px; font-weight: bold; margin-left: 15px;">By project type</Dropdown.ItemText>
-						  
-						  
-						  <a class="dropdown-item" href="projectRestaurantApp.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Restaurant Search</a>
-						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Map Tracking</a>
-						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Blog Management</a>
+						  <a class="dropdown-item" href="projectRestaurantApp.html" style=" font-size: 14px;">Mobile App - Restaurant Search</a>
+						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App - Map Tracking</a>
+						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App - Blog Management</a>
 						  <a class="dropdown-item" href="projectCurrencyMonitor.html" style="font-size: 14px;">Web App - Exchange Rate Monitor</a>
 						  <a class="dropdown-item" href="projectPriceSensitivity.html" style=" font-size: 14px;">Web App - E-commerce Price Sensitivity Tool</a>
 						  <a class="dropdown-item" href="projectChatbot.html" style=" font-size: 14px;">Chatbot - English Convo Practice</a>
@@ -242,41 +252,41 @@
                     <div class="text container">
                       <div class="desc" style="margin-bottom:200px; padding-top: 100px;">
                         <h1 class="text-center project_title"><Img src="./images/illu_rate.png" class="icon"> Web App - Exchange Rate Monitor</h1>
-                        <h5 class="mb-4 text-center" style="color: #52575d">
+                        <h5 class="mb-4 text-center title" style="color: #52575d">
                           <b>Stack: React, Express, Node JS, MongoDB </b></h5>
-                          <P style="color: #52575d">A website application that enable users to set up accounts, read about exchange rates analysis, set up notifications and get on the 
+                          <P style="color: #52575d" class="description">A website application that enable users to set up accounts, read about exchange rates analysis, set up notifications and get on the 
                           waiting list for new features.</P>
                         <!--<Img src="./images/currencyMonitor1.png" style="width: 70%; height: 70%;  display: block; margin-left: auto; margin-right: auto;" />-->
                         <br>
                         <div class='row'>
                           <div class="col-md-6">
-                        <h5 style="color: #52575d"><b>User Authentication</b></h5>
-                        <P style="color: #52575d">Used <code>Express</code> and <code>Node JS</code> for backend and set up two API routes: <code>register</code> and <code>login</code>. 
+                        <h5 style="color: #52575d" class="title"><b>User Authentication</b></h5>
+                        <P style="color: #52575d" class="description">Used <code>Express</code> and <code>Node JS</code> for backend and set up two API routes: <code>register</code> and <code>login</code>. 
                           Used <code>password</code> and <code>jsonwebtoken</code> for authentication and <code>validator</code> for validation. Passwords are hashed before being sent to the server. 
                           Users' hashed credentials are stored in <code>MongoDB</code> database.</P>
                           <br>
-                          <h5 style="color: #52575d"><b>Persistent Login</b></h5>
-                          <P style="color: #52575d" >Stored token in <code>LocalStorage</code>. The app reads the token in <code>LocalStorage</code> for persistent login.</P>
+                          <h5 style="color: #52575d" class="title"><b>Persistent Login</b></h5>
+                          <P style="color: #52575d" class="description">Stored token in <code>LocalStorage</code>. The app reads the token in <code>LocalStorage</code> for persistent login.</P>
                           <br>
-                          <h5 style="color: #52575d"><b>Notification Turn On/Off</b></h5>
-                          <P style="color: #52575d">Used the React <code>Switch</code> component to toggle the state of a single setting on or off.</P>
+                          <h5 style="color: #52575d" class="title"><b>Notification Turn On/Off</b></h5>
+                          <P style="color: #52575d" class="description">Used the React <code>Switch</code> component to toggle the state of a single setting on or off.</P>
                           <br>
-                          <h5 style="color: #52575d"><b>Waiting List</b></h5>
-                          <P style="color: #52575d">Set up a API route <code>‘/waitlist’</code> to collect users’ emails for a new feature.</P>
+                          <h5 style="color: #52575d" class="title"><b>Waiting List</b></h5>
+                          <P style="color: #52575d" class="description">Set up a API route <code>‘/waitlist’</code> to collect users’ emails for a new feature.</P>
                           <br>
-                          <h5 style="color: #52575d"><b>Responsive Design</b></h5>
-                          <P style="color: #52575d">UI is responsive to users’ screen sizes and mobile friendly.</P>
+                          <h5 style="color: #52575d" class="title"><b>Responsive Design</b></h5>
+                          <P style="color: #52575d" class="description">UI is responsive to users’ screen sizes and mobile friendly.</P>
                           <br>
-                          <h5 style="color: #52575d"><b>Graphs and Tooltip</b></h5>
-                          <P style="color: #52575d">Integrated <code>Chart.js</code> to illustrate analysis and used the React <code>Tooltip</code> component to explain financial terms.</P>
+                          <h5 style="color: #52575d" class="title"><b>Graphs and Tooltip</b></h5>
+                          <P style="color: #52575d" class="description">Integrated <code>Chart.js</code> to illustrate analysis and used the React <code>Tooltip</code> component to explain financial terms.</P>
                           </p>
                         <br>
                       </div>
                       <div class="col-md-6">
                         <Img src="./images/currencyMonitor4.gif"  class="screenshot" >
-                        <P style="color: #A9A9A9" class="text-center">desktop view</P>
+                        <P style="color: #A9A9A9" class="text-center description">desktop view</P>
                         <Img src="./images/CurrencyMonitor3.gif"   class="screenshot" >
-                        <P style="color: #A9A9A9" class="text-center">mobile view</P>
+                        <P style="color: #A9A9A9" class="text-center description">mobile view</P>
                       </div>
                       </div>
                         <a class="btn" type="button" href="https://github.com/TatianaTian/ExchangeRateMonitor"  target="_blank" style="background-color: #A9A9A9; color: white;" >

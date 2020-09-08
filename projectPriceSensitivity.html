@@ -144,11 +144,17 @@
                     display: block
 				}
 				h1.project_title{
-          font-size: 32px
+          font-size: 28px
 				}
         Img.icon{
           width: 5%;
+		}
+		h5.title{
+          font-size: 20px;
         }
+        p.description{
+          font-size: 16px;
+        }	
 		}
 		@media (max-width: 576px){
             h1.title {
@@ -171,11 +177,17 @@
                     display: block
 				}
 				h1.project_title{
-				font-size: 30px
+				font-size: 28px
 						}
 			Img.icon{
 				width: 10%;
-        	}	
+			}	
+			h5.title{
+          font-size: 18px;
+        }
+        p.description{
+          font-size: 15px;
+        }	
         }
 
         </style>
@@ -199,9 +211,9 @@
 						  <Dropdown.ItemText style=" font-size: 16px; font-weight: bold; margin-left: 15px;">By project type</Dropdown.ItemText>
 						  
 						  
-						  <a class="dropdown-item" href="projectRestaurantApp.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Restaurant Search</a>
-						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Map Tracking</a>
-						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App (iOS, Android) - Blog Management</a>
+						  <a class="dropdown-item" href="projectRestaurantApp.html" style=" font-size: 14px;">Mobile App - Restaurant Search</a>
+						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App - Map Tracking</a>
+						  <a class="dropdown-item" href="projectMapTracking.html" style=" font-size: 14px;">Mobile App - Blog Management</a>
 						  <a class="dropdown-item" href="projectCurrencyMonitor.html" style="font-size: 14px;">Web App - Exchange Rate Monitor</a>
 						  <a class="dropdown-item" href="projectPriceSensitivity.html" style=" font-size: 14px;">Web App - E-commerce Price Sensitivity Tool</a>
 						  <a class="dropdown-item" href="projectChatbot.html" style=" font-size: 14px;">Chatbot - English Convo Practice</a>
@@ -239,32 +251,32 @@
 					<div class="text container">
 						<div class="desc" style="margin-bottom:200px; padding-top: 100px;">
 							<h1 class="text-center project_title"> <Img src="./images/illu_money.png" class="icon"> Shopify Embedded App <br> E-commerce Price Sensitivity Tool</h1>
-              <h5 class="mb-4 text-center" style="color: #52575d">
+              <h5 class="mb-4 text-center title" style="color: #52575d">
                 <b>Stack: React, Koa, Node JS, MongoDB, Polaris, GraphQL, Apollo, Shopify API </b></h5>
-                <P style="color: #52575d">A website application embedded in Shopify that enables e-commerce store owners to monitor their international customers’ price sensitivity on each product in each currency. </P>
+                <P style="color: #52575d" class="description">A website application embedded in Shopify that enables e-commerce store owners to monitor their international customers’ price sensitivity on each product in each currency. </P>
               <!--<Img src="./images/currencyMonitor1.png" style="width: 70%; height: 70%;  display: block; margin-left: auto; margin-right: auto;" />-->
               <br>
               <div class='row'>
                 <div class="col-md-6">
-              <h5 style="color: #52575d"><b>Third-Party API Connection</b></h5>
-              <P style="color: #52575d">Received <code>Shopify API secret key</code> and <code>Shopify API key</code>, and used <code>koa-middleware</code> to work with the <code>koa-shopify-auth package</code> for Shopify account authentication. </P>
+              <h5 style="color: #52575d" class="title"><b>Third-Party API Connection</b></h5>
+              <P style="color: #52575d" class="description">Received <code>Shopify API secret key</code> and <code>Shopify API key</code>, and used <code>koa-middleware</code> to work with the <code>koa-shopify-auth package</code> for Shopify account authentication. </P>
                 <br>
-                <h5 style="color: #52575d"><b>Polaris Layout And Styling</b></h5>
-                <P style="color: #52575d" >Created <code>Polaris</code> UI that fits into Shopify UI layout and styles.</P>
+                <h5 style="color: #52575d" class="title"><b>Polaris Layout And Styling</b></h5>
+                <P style="color: #52575d" class="description">Created <code>Polaris</code> UI that fits into Shopify UI layout and styles.</P>
                 <br>
-                <h5 style="color: #52575d"><b><code></code>GraphQL Querying Data</b></h5>
-                <P style="color: #52575d">The reason to pick <code>GraphQL</code> over <code>REST APIs</code> is that <code>GraphQL</code> uses a single endpoint with fields and query the specific data, while <code>REST APIs</code> use multiple methods to request and modify data. <code></code>GraphQL can generally improve the speed of the app since it only queries the specific data I need. </P>
+                <h5 style="color: #52575d" class="title"><b><code></code>GraphQL Querying Data</b></h5>
+                <P style="color: #52575d" class="description">The reason to pick <code>GraphQL</code> over <code>REST APIs</code> is that <code>GraphQL</code> uses a single endpoint with fields and query the specific data, while <code>REST APIs</code> use multiple methods to request and modify data. <code></code>GraphQL can generally improve the speed of the app since it only queries the specific data I need. </P>
                 <br>
-                <h5 style="color: #52575d"><b><code></code>Apollo Fetching Data</b></h5>
-                <P style="color: #52575d"><code>Apollo</code> is used to build a React UI that can fetch data with <code>GraphQL</code>.</P>
+                <h5 style="color: #52575d" class="title"><b><code></code>Apollo Fetching Data</b></h5>
+                <P style="color: #52575d" class="description"><code>Apollo</code> is used to build a React UI that can fetch data with <code>GraphQL</code>.</P>
                 <br>
-                <h5 style="color: #52575d"><b>Webhooks</b></h5>
-                <P style="color: #52575d">Used <code>koa Shopify webhooks packages</code> to register and receive Shopify webhooks and listen to events such as creating products, taking orders, receiving payments, etc.</P>
+                <h5 style="color: #52575d" class="title"><b>Webhooks</b></h5>
+                <P style="color: #52575d" class="description">Used <code>koa Shopify webhooks packages</code> to register and receive Shopify webhooks and listen to events such as creating products, taking orders, receiving payments, etc.</P>
               <br>
             </div>
             <div class="col-md-6">
               <Img src="./images/PriceSensitivity.gif"  class="screenshot" >
-              <P style="color: #A9A9A9" class="text-center">app view on Shopify</P>
+              <P style="color: #A9A9A9" class="text-center description">app view on Shopify</P>
             </div>
             </div>
               <a class="btn" type="button" href="https://github.com/TatianaTian/PriceSensitivity"  target="_blank" style="background-color: #A9A9A9; color: white;" >
