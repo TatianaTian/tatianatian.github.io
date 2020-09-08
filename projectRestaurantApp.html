@@ -83,7 +83,7 @@
 					font-size: 18px;
 				}
                 Img.screenshot{
-                    width: 60%;
+                    width: 50%;
                     height: 100%;
                     margin-left: auto; 
                     margin-right:auto; 
@@ -164,7 +164,7 @@
 				font-size: 15px;
 			}
             Img.screenshot{
-                    width: 50%;
+                    width: 100%;
                     height: 100%;
                     margin-left: auto; 
                     margin-right:auto; 
@@ -241,65 +241,61 @@
               <div class="text container">
                 <div class="desc" style="margin-bottom:200px; padding-top: 100px;">
                   
-                  <h1 class="text-center project_title"><Img src="./images/illu_blog.png" class="icon">Mobile App - Find Your Restaurants</h1>
+                  <h1 class="text-center project_title"><Img src="./images/illu_res.png" class="icon">Mobile App - Restaurants Recommender</h1>
+                    <p class="text-center">(in process)</p>
                   <h5 class="mb-4 text-center" style="color: #52575d">
-                    <b>Stack: React Native, Node JS, Express, MongoDB</b></h5>
-                    <P style="color: #52575d">A mobile app that enables users to create, edit, read, and delete blogs. I mainly worked on advanced state management with context. </P>
+                    <b>Stack: React Native, Express, Node JS, MongoDB, Yelp API, RiveScript</b></h5>
+                    <P style="color: #52575d">A mobile app that recommends restaurants to users. It focused on finding similar restaurants to the ones selected by users based on certain criteria. </P>
                   <!--<Img src="./images/currencyMonitor1.png" style="width: 70%; height: 70%;  display: block; margin-left: auto; margin-right: auto;" />-->
                   <br>
                   <div class='row'>
                     <div class="col-md-6">
-                  <h5 style="color: #52575d"><b>Create Blogs</b></h5>
-                  <P style="color: #52575d">Once the user saves the blog title and the blog content, an <code>id</code> will be automatically generated and saved along with the blog content as 
-                    an <code>object</code> of a <code>state</code>. The <code>state</code> is kept in a <code>Context</code> that works with a <code>Reducer</code>. The implementation required <code>useContext</code> and <code>useReducer</code>.
-                  <br>
-                   <code>{<br>
-                    &nbsp;&nbsp;id: blog.id,<br>
-                    &nbsp;&nbsp;title: blog.title,<br>
-                    &nbsp;&nbsp;content: blog.content<br>
-                    }</code> 
-                    </P>
-                    
-                    <br>
-                    <h5 style="color: #52575d"><b>Read Blogs</b></h5>
-                    <P style="color: #52575d" >I used <code>useContext</code> to read <code>state</code>, and find the blog by <code>id</code>.</P>
-                    <br>
-                    <h5 style="color: #52575d"><b>Edit Blogs</b></h5>
-                    <P style="color: #52575d">I displayed the <code>initialValues</code> as the previous title and content by reading the <code>state</code> with <code>useContext</code>. The user can edit the blog based on his/her previous inputs. </P>
-                    <br>
-                    <h5 style="color: #52575d"><b>Delete Blogs</b></h5>
-                    <P style="color: #52575d">Remove the blog by filtering the current <code>state</code>:<br>
-                      <code>state.filter(blogPost => blogPost.id !== action.payload)</code>
+                      <h5 style="color: #52575d"><b>In-App Authentication</b></h5>
+                      <P style="color: #52575d">Used <code>Express</code> and <code>Node JS</code> for backend and set up two API routes: <code>./signup</code> and <code>./signin</code>. Used <code>jsonwebtoken</code> for authentication and <code>Bcrypt</code> for password-hashing. Users hashed credentials are stored in <code>MongoDB </code>database with <code>mongoose</code> library.</P>
+                        <br>
+                        <h5 style="color: #52575d"><b>Persistent Login</b></h5>
+                        <P style="color: #52575d" >Stored token in <code>AsyncStorage</code>. The app reads the token in <code>AsyncStorage</code> for persistent login.</P>
+                        <br>
+                    <h5 style="color: #52575d"><b>Restaurant Search</b></h5>
+                    <P style="color: #52575d">
+                      Connected to <code>Yelp API</code> with <code>Bearer Authentication</code> and query data with <code>Axios</code>. 
                       </P>
                     <br>
-                    <h5 style="color: #52575d"><b>State Management</b></h5>
-                    <P style="color: #52575d">The key of this app is to use <code>useContext</code> and <code>useReducer</code> to manage <code>state</code>. <code>useReducer</code> can ‘centralize’ all your state transitions to a <code>reducer</code> function by including a <code>dispatch</code> function in each state transition. 
-                      It’s a powerful combination to manage nested components with complex state transitions. </P>
+                    <h5 style="color: #52575d"><b>Animated Map View</b></h5>
+                    <P style="color: #52575d">
+                      Included <code>MapView.Marker</code> to pinpoint restaurants’ latitude & longitude locations. Used <code>interpolation</code> from <code>React Native Animation API</code> to define the opacity range of location markers. Used <code>ScrollView</code> with <code>Animated.event()</code> to trace the current restaurant card, show its location in full opacity, and move the <code>MapView</code> to its location.
                     </p>
+                    <br>
+                    <h5 style="color: #52575d"><b>Express Backend API Setup</b></h5>
+                    <P style="color: #52575d">Used <code>Jsonwebtoken</code> to check if the user is logged in. Set up database <code>schemas</code> to post new objects to <code>MongoDB</code> databases. Used <code>express</code> to set up routes such as <code>/signup</code>, <code>/signin</code>, <code>/reviews</code> to receive requests from the front end.</P>
                   <br>
                 </div>
                 <div class="col-md-6">
                   <div class="col-md-12">
                     <div class="row">
-                      <Img src="./images/blog1.png"   class="screenshot" >
+                      <Img src="./images/food3.png"   class="screenshot" >
+                        <Img src="./images/food1.png"   class="screenshot" >
+                      
+                      
     
-                      <Img src="./images/blog2.png"   class="screenshot" >
+                     
                     </div>
                   </div>
                   <br>
                   
                   <div class="col-md-12">
-                    <Img src="./images/blog.gif" class="screenshot" >
-                    <P style="color: #A9A9A9" class="text-center">content source: https://www.heartandstroke.ca/</P>
+                    <div class="row">
+                      <Img src="./images/animated_map.gif" class="screenshot" >
+                      <Img src="./images/food2.png"   class="screenshot" >
+                    
+                    
+                    </div>
                   </div>
                 </div>
            
                 
        
                 </div>
-                  <a class="btn" type="button" href="https://github.com/TatianaTian/Blog"  target="_blank" style="background-color: #A9A9A9; color: white;" >
-                    <b>Code on Github</b>
-                  </a>
     
                             </div>
               </div>
